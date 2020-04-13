@@ -1,0 +1,43 @@
+﻿
+<div class="card">
+	<div class="card-body">
+		Ordredato:&nbsp;{{$ctrl.datas.CreateDate |  date:'dd-MM-yyyy'}}<br />
+		Ordrenummer:&nbsp;{{$ctrl.datas.Id}}</>
+	</div>
+</div>
+
+
+
+<div class="card">
+	<div class="card-body">
+		{{$ctrl.datas.customer.Firstname}}&nbsp;{{$ctrl.datas.customer.Lastname}}<br />
+		{{$ctrl.datas.customer.Address1}}&nbsp;{{$ctrl.datas.customer.Address2}}<br />
+		{{$ctrl.datas.customer.Zip}}&nbsp;{{$ctrl.datas.customer.City}}<br />
+		Kundenummer:&nbsp;{{$ctrl.datas.customer.Id}}</>
+	</div>
+</div>
+
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Quantity</th>
+			<th>Item Text</th>
+			<th>Price</th>
+			<th class="text-right">Total</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="datas in $ctrl.datas.DTOOrderlines">
+			<td>{{datas.Quantity}}</td>
+			<td>{{datas.ItemText}}</td>
+			<td>{{datas.Price}}</td>
+			<td class="text-right">{{datas.OrderlineTotal}} DKK</td>
+		</tr>
+		<tr>
+
+			<td class="text-right" colspan="4"><strong>Total {{$ctrl.datas.OrderTotal}} DKK</strong></td>
+		</tr>
+
+	</tbody>
+</table>

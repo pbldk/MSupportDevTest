@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="App" lang="en" data-ng-strict-di>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>MSupportOrders</title>
+	<meta name="robots" content="noindex, nofollow">
+	<script src="/_publish/scripts/vendor.min.js"></script>
+	<link href="/_publish/css/bootswatch.min.css" rel="stylesheet" />
+	<link href="/_publish/css/global.min.css" rel="stylesheet" />
+</head>
+
+<body data-ng-controller="BaseCtrl as basectrl" data-ng-cloak>
+	<div style="text-align:center;margin-top:100px;" data-ng-show="userFunc.showappstarting">
+		<img src="/_publish/img/application_starting.gif" />
+	</div>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navigation-1 ngFadeDelay-1" data-ng-show="userFunc.applicationinit">
+		<a class="navbar-brand" href="#">
+			<img src="/_publish/img/register.png" class="img-fluid" style="width:36px;margin-right:20px" /><h6 style="display:inline-block">Msupport systems</h6>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarColor03">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				</li>
+			</ul>
+			<div><h6>Logged in as <strong>Admin</strong></h6></div>
+		</div>
+	</nav>
+
+	<div class="container ngFadeDelay-2" data-ng-show="userFunc.applicationinit">
+
+		<div class="row">
+			<div class="col-3">
+				<nav class="navigation-2">
+					<uib-accordion close-others="false">
+						<div uib-accordion-group class="mt-5 shadow-sm" heading="Orders" is-open="true">
+							<p><a href="#!/">Orderlist</a></p>
+							<p><a href="#!/customers">Customers</a></p>
+						</div>
+
+						<div uib-accordion-group class="mt-1 shadow-sm" style="display:none">
+							<uib-accordion-heading>
+								Staticstics
+							</uib-accordion-heading>
+							<p><a href="">Sales</a></p>
+						</div>
+
+						<div uib-accordion-group class="mt-1 shadow-sm">
+							<uib-accordion-heading>
+								Account
+							</uib-accordion-heading>
+							<p><a href data-ng-click="userFunc.CloseApplication()">Log out</a></p>
+						</div>
+					</uib-accordion>
+				</nav>
+			</div>
+
+			<!--main section-->
+			<div class="col-9 mt-5">
+				<div ng-view class="ngFade view"></div>
+				<hr />
+				<br />
+				<a class="ml-2" href data-ng-click="userFunc.goBack()" title="Go back"><img src="/_publish/img/back.png" data-ng-show="userFunc.showhistory" /></a>
+			</div>
+		</div>
+	</div>
+	<div style="text-align:center;margin-top:100px;" data-ng-show="userFunc.showloggedout" class="ngFadeDelay-3">
+		<img src="/_publish/img/logged_out.gif" />
+	</div>
+	<footer data-ng-show="userFunc.applicationinit" class="ngFadeDelay-1"></footer>
+	<script src="_publish/scripts/vendor_modules.min.js"></script>
+	<script src="_publish/scripts/app.min.js"></script>
+</body>
+</html>

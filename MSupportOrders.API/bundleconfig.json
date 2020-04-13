@@ -1,0 +1,31 @@
+[
+  {
+    "outputFileName": "_publish/scripts/vendor.js",
+   "inputFiles": [
+    "App/vendor/angular/angular.js",
+    "App/vendor/angular/angular-route.js",
+    "App/vendor/angular/angular-resource.js",
+    "App/vendor/angular/angular-aria.js",
+    "App/vendor/angular/angular-sanitize.js",
+    "App/vendor/angular/angular-animate.js"
+   ]
+  },
+  {
+    "outputFileName": "_publish/scripts/vendor_modules.js",
+    "inputFiles": [     
+      "App/vendor/ui-bootstrap-tpls-3.0.6.js"
+    ]
+  },
+  {
+    "outputFileName": "_publish/scripts/app.js",
+   "inputFiles": [
+    "App/app.module.js",
+    "App/app.controller.js",
+    "App/app.config.js",
+    "App/app.routes.js",
+    "App/components/statistics/orderstatistics.component.js",
+    "App/components/orders/*.js",
+    "App/factory/*.js"
+   ]
+  }
+]

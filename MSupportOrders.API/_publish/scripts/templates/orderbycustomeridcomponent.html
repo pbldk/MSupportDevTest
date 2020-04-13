@@ -1,0 +1,30 @@
+﻿
+<br />
+<h6>Tidligere Ordrer</h6>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th scope="col">&nbsp;</th>
+			<th scope="col">OrderID</th>
+			<th scope="col">Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="datas in $ctrl.datas">
+			<td scope="row">
+				<a href="#!/orderbyid?id={{datas.Id}}">
+					<img src="/_publish/img/expand.png" />
+				</a>
+			</td>
+			<td scope="row">{{datas.Id}}</td>
+			<td scope="row">
+				{{datas.CreateDate |  date:'dd-MM-yyyy'}}
+			</td>
+
+		</tr>
+	</tbody>
+</table>
+
+
+
