@@ -1,6 +1,6 @@
 # MSupportDevTest
 
-A complete .NET Domain Driven Design API, with AngularJS frontend.
+A complete .NET Domain Driven Design API, with AngularJS frontend and support for multicore processor and threads.
 
 
 ##### MSupportOrders.API
