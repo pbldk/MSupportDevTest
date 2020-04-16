@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -15,11 +16,13 @@ public 	SqlCommand command;
 		public DbManager()
 		{
 			connection = new SqlConnection();
-//			connection.ConnectionString = @"Data Source=XXXXXX;Initial Catalog=XXXXX;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+			//Get connection string from web.config file
+			//ConnectionString with encrypted transport
+			string strcon = ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
 
 
-//Online string with encrypted transport, must be moved to config file
-            connection.ConnectionString = @"xxxxxxxxxxxxxxxxxxxxxxxxxxx";
+			connection.ConnectionString = strcon;
 
 			command = new SqlCommand();
 			command.Connection = connection;

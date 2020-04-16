@@ -25,6 +25,8 @@
     "App/app.routes.js",
     "App/components/statistics/orderstatistics.component.js",
     "App/components/orders/*.js",
+    "App/components/orderlists/*.js",
+    "App/components/customers/*.js",
     "App/factory/*.js"
    ]
   }

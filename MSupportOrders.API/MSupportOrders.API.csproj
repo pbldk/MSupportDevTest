@@ -86,10 +86,10 @@
     <Content Include="App\app.module.js" />
     <Content Include="App\app.routes.js" />
     <Content Include="App\components\orders\orderbycustomerid.component.js" />
-    <Content Include="App\components\orders\customerbyid.component.js" />
-    <Content Include="App\components\orders\customerslist.component.js" />
+    <Content Include="App\components\customers\customerbyid.component.js" />
+    <Content Include="App\components\customers\customerslist.component.js" />
     <Content Include="App\components\orders\orderbyid.component.js" />
-    <Content Include="App\components\orders\orderlist.component.js" />
+    <Content Include="App\components\orderlists\orderlist.component.js" />
     <Content Include="App\components\statistics\orderstatistics.component.js" />
     <Content Include="App\factory\customers.factory.js" />
     <Content Include="App\factory\order.factory.js" />
@@ -884,11 +884,11 @@
     <Content Include="_publish\img\expand.png" />
     <Content Include="_publish\img\logged_out.gif" />
     <Content Include="_publish\img\register.png" />
+    <Content Include="App\templates\orderbyidcomponent.html" />
     <Content Include="_publish\scripts\app.js" />
     <Content Include="_publish\scripts\app.min.js">
       <DependentUpon>app.js</DependentUpon>
     </Content>
-    <Content Include="App\templates\orderbyidcomponent.html" />
     <Content Include="_publish\scripts\vendor.js" />
     <Content Include="_publish\scripts\vendor.min.js">
       <DependentUpon>vendor.js</DependentUpon>
