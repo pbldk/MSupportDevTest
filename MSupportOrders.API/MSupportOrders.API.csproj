@@ -942,6 +942,8 @@
   <ItemGroup>
     <Folder Include="App\vendor\angular\i18n\ngLocale\" />
     <Folder Include="App_Data\" />
+    <Folder Include="bin\Release\Publish\_publish\scripts\templates\" />
+    <Folder Include="bin\Release\Publish\_publish\scripts\views\" />
     <Folder Include="_publish\scripts\templates\" />
     <Folder Include="_publish\scripts\views\" />
   </ItemGroup>

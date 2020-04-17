@@ -13,15 +13,31 @@
 }
 
 .navigation-1 {
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);	
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+	.item-1 {
+		width: 36px;
+		margin-right: 20px;
+	}
+}
+
+
+.bin-1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.bin-2 {
+	text-align: center;
+	margin-top: 100px;
 }
 
 
 
 
 //effect
-.hoverTable:hover{
-background:grey;
+.hoverTable:hover {
+	background: grey;
 }
 
 /* EFFECTS*/
@@ -50,11 +66,13 @@ background:grey;
 .ngFadeDelay-1.ng-hide {
 	opacity: 0;
 }
+
 .ngFadeDelay-1 {
 	transition: 0.1s linear all;
 	opacity: 1;
 	transition-delay: 1s;
 }
+
 .ngFadeDelay-2.ng-hide {
 	opacity: 0;
 }
@@ -76,15 +94,13 @@ background:grey;
 }
 
 .view {
-min-height:500px;
+	min-height: 500px;
 }
 
 //footer
 footer {
-margin-top:150px;
-min-height:12rem;
-background-color:black;
-text-align:center;
+	margin-top: 150px;
+	min-height: 12rem;
+	background-color: black;
+	text-align: center;
 }
-
-

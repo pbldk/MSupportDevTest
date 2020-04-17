@@ -13,13 +13,13 @@
 </head>
 
 <body data-ng-controller="BaseCtrl as basectrl" data-ng-cloak>
-	<div style="text-align:center;margin-top:100px;" data-ng-show="userFunc.showappstarting">
+	<div  data-ng-show="userFunc.showappstarting" class="bin-1">
 		<img src="/_publish/img/application_starting.gif" />
 	</div>
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light navigation-1 ngFadeDelay-1" data-ng-show="userFunc.applicationinit">
 		<a class="navbar-brand" href="#">
-			<img src="/_publish/img/register.png" class="img-fluid" style="width:36px;margin-right:20px" /><h6 style="display:inline-block">Msupport systems</h6>
+			<img src="/_publish/img/register.png" class="img-fluid item-1"/><h6 style="display:inline-block">Msupport systems</h6>
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@
 			</div>
 		</div>
 	</div>
-	<div style="text-align:center;margin-top:100px;" data-ng-show="userFunc.showloggedout" class="ngFadeDelay-3">
+	<div data-ng-show="userFunc.showloggedout" class="ngFadeDelay-3 bin-2">
 		<img src="/_publish/img/logged_out.gif" />
 	</div>
 	<footer data-ng-show="userFunc.applicationinit" class="ngFadeDelay-1"></footer>
